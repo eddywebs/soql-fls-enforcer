@@ -36,10 +36,9 @@ thousand of SOQL query in the code.
    * The entered credential will have the following format in ```.credential```
    
    ```
- {"username":"user@example.com","password":"secret","serverurl":"https://test.salesforce.com"}
+   {"username":"user@example.com","password":"secret","serverurl":"https://test.salesforce.com"}
    ```
    
-
 3. To deploy, enter the following command:
 
     ```
