@@ -6,10 +6,10 @@ thousand of SOQL query in the code.
 
 ## Installation
 ### Prerequisite
-1. Ensure [Force.com ESAPI](https://github.com/forcedotcom/force-dot-com-esapi.git) 
-   is install in your Salesforce Org
-2. Ensure Java8 JDK is installed. [https://java.com/en/download/]
-3. Ensure Gruntjs installed.
+1. Ensure ~~[Force.com ESAPI](https://github.com/forcedotcom/force-dot-com-esapi.git)~~ [vladborsh's apex-fls-utils](https://github.com/vladborsh/apex-fls-utils)
+   is installed in your Salesforce Org
+2. (Optional)Java8 JDK is installed. [https://java.com/en/download/]
+3. (Optional) Gruntjs installed.
    * Install NPM: https://www.npmjs.com/get-npm
    * Install Gruntjs:
     
@@ -19,6 +19,13 @@ thousand of SOQL query in the code.
 
 ### Code Deployment
 
+####1. Deploy using Githubsfdeploy (easiest)
+<a href="https://githubsfdeploy.herokuapp.com?owner=eddywebs&repo=soql-fls-enforcer&ref=master">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>   
+
+####2. Deploy using grunt (requires optional dependencies above)
 1. With NPM installed, execute the following command to get all the 
    dependencies:
    
