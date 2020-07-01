@@ -21,7 +21,7 @@
  */
 
 /**
- * Validate SOQL FLS access using ESAPI. Parse SOQL query to list all the fields to be validated
+ * Validate SOQL FLS access using FLSCheckUtil class. Parse SOQL query to list all the fields to be validated
  * to ensure all fields specified is readable.
  */
 public with sharing class SoqlFlsEnforcer {
@@ -104,7 +104,8 @@ public with sharing class SoqlFlsEnforcer {
 		if (fieldList.size() == 0) {
 			result = true; // Select count without filter
 		} else  {
-			result = ESAPI.accessController().isAuthorizedToView(objectType, fieldList);
+			result = FlsUtils.isAccessible(objectType.getDescribe().getName(), fieldList);
+            
 		}
 
 		return result;
